@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -70,18 +71,20 @@
 .card {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     width: 300px;
-    text-align: center;
+    /* text-align: center; */
     aspect-ratio: 1/1;
-    border: #FC8019 1px solid;
+    /* border: #FC8019 1px solid; */
 }
 
 .card>img {
-    width: 150px;
+    width: 260px;
+    height: 180px;
+    border-radius: 15px;
 }
 
 .body {
@@ -89,4 +92,29 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 30px;
+}
+
+.card-attributes {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 220px;
+}
+
+.light-font {
+    font-weight: lighter;
+    font-stretch: condensed;
+}
+
+.rating-time {
+    display: flex;
+    gap: 5px;
+
+}
+
+.filter-error {
+    margin-top: 30px;
+    margin-left: 50%;
+    translate: -20%
 }
