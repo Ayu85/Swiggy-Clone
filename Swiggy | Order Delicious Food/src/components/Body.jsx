@@ -4,6 +4,10 @@ import { restaurantData } from "../utils/mockData";
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
+import offer1 from '../assets/offer1.webp'
+import offer2 from '../assets/offer2.webp'
+import offer3 from '../assets/offer3.webp'
+
 function Body() {
     const [searchText, setsearchText] = useState("");
     const [originalRestaurantData, setoriginalRestaurantData] = useState([]);
@@ -12,15 +16,6 @@ function Body() {
     useEffect(() => {
         getRestaurantData();
     }, [])
-    // const getRestaurantDataAPI = async () => {
-    //     const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.321684&lng=82.987289&page_type=DESKTOP_WEB_LISTING")
-    //     const json = await data.json();
-    //     console.log(json);
-    //     const usableData = await json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    //     setoriginalRestaurantData(usableData);
-    //     setfilteredRestaurantData(usableData);
-
-    // }
     // useEffect(() => {
     //     getd();
     // }, [])
@@ -53,6 +48,17 @@ function Body() {
                 }}>
                     Find
                 </button>
+            </div>
+            {/* offers section */}
+            <div className="offer-combo">
+                 <h1 className="offer-header">Best offers for you</h1>
+                <div className="offer-section">
+                    <img src={offer1} />
+                    <img src={offer2} />
+                    <img src={offer3} />
+                </div>
+                <h1 className="offer-header">Whats going on your mind?</h1>
+
             </div>
 
             <div className="body">

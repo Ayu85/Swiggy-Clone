@@ -15,7 +15,7 @@
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-   /* border-bottom: #ced0d4 1px solid; */
+    /* border-bottom: #ced0d4 1px solid; */
     box-shadow: 0px 10px 30px -15px #dadada
 }
 
@@ -33,14 +33,17 @@
     color: #3E4152;
     font-weight: bolder;
 }
-.nav-buttons>ul>a>li:hover{
+
+.nav-buttons>ul>a>li:hover {
     color: #FC8019;
     transition-duration: .5s;
 }
-.btn-area{
+
+.btn-area {
     display: flex;
     gap: 20px;
 }
+
 .log-btn {
 
     width: 90px;
@@ -249,7 +252,8 @@
     border-radius: 8px;
 
 }
-.shimmer-card{
+
+.shimmer-card {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -259,34 +263,74 @@
     width: 300px;
     aspect-ratio: 1/1;
 }
-.shimmer-b1{
+
+.shimmer-b1 {
     width: 270px;
     height: 150px;
     border-radius: 9px;
-    background:rgb(224, 224, 224);
+    background: rgb(224, 224, 224);
 }
-.shimmer-b2{
+
+.shimmer-b2 {
     width: 170px;
     height: 30px;
     border-radius: 9px;
-    background:rgb(224, 224, 224);
+    background: rgb(224, 224, 224);
 }
-.shimmer-b3{
+
+.shimmer-b3 {
     width: 100px;
     height: 20px;
     border-radius: 9px;
-    background:rgb(224, 224, 224);
+    background: rgb(224, 224, 224);
 }
-.shimmer-b4{
+
+.shimmer-b4 {
     width: 270px;
     height: 20px;
     border-radius: 9px;
-    background:rgb(224, 224, 224);
+    background: rgb(224, 224, 224);
 }
-.shimmer-body{
+
+.shimmer-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin-top: 50px;
+}
+
+.offer-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+
+}
+
+.offer-section>img {
+    width: 400px;
+    cursor: pointer;
+}
+
+.offer-section>img:hover {
+    scale: 1.05;
+    transition: .1s ease-in all;
+}
+
+.offer-header {
+  
+    font-size: 22px;
+    color: #000;
+}
+
+.offer-combo {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin-left: 50%;
+    translate: -50%;
+    margin-top: 20px;
 }
