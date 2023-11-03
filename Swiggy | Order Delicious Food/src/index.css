@@ -24,7 +24,8 @@
     font-size: 1.2rem;
 }
 
-.log-btn>button {
+.log-btn{
+
     width: 90px;
     height: 28px;
     border-radius: 5px;
@@ -80,7 +81,11 @@
     aspect-ratio: 1/1;
     /* border: #FC8019 1px solid; */
 }
-
+.body>a{
+    color:black;
+    cursor:pointer;
+    text-decoration:none;
+}
 .card>img {
     width: 260px;
     height: 180px;
@@ -117,4 +122,25 @@
     margin-top: 30px;
     margin-left: 50%;
     translate: -20%
+}
+.log-btn{
+    
+}
+.menu-card{
+    display: flex;
+    justify-content: space-between;
+    border: #FC8019 1px solid;
+    width:60%;
+}
+.menu-card-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:30px;
+}
+.menu-card>img{
+    width: 200px;
+    aspect-ratio:1/1;
 }
