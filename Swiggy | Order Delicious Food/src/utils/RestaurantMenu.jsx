@@ -1,0 +1,96 @@
+ export const allMenu = {
+    "781681rest": [
+        {
+            "id": "126651254",
+            "name": "Cheese pizza",
+            "category": "Pizza",
+            "imageId": "6ad4f38397903572a62fc057a5a75513",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 11000,
+        },
+        {
+            "id": "126651255",
+            "name": "Tomato pizza",
+            "category": "Pizza",
+            "imageId": "d31b7c1df1235a87d5e257026d30d846",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 14000
+        },
+        {
+            "id": "126651256",
+            "name": "Onion pizza",
+            "category": "Pizza",
+            "imageId": "0503211638db0e1834b58e23c5d425a3",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 14000
+        },
+        {
+            "id": "126651257",
+            "name": "Veg pizza",
+            "category": "Pizza",
+            "imageId": "9301823042bfa8f75285e23e9274eddb",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 14000,
+        },
+        {
+            "id": "126651258",
+            "name": "Paneer pizza",
+            "category": "Pizza",
+            "imageId": "778e6b44696bbbaf5f7ad423fd3ff066",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 14000,
+        },
+        {
+            "id": "126651259",
+            "name": "Mushroom pizza",
+            "category": "Pizza",
+            "imageId": "b8ea3b551fb9422f384f54c0f359496c",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 14000,
+        },
+        {
+            "id": "126651260",
+            "name": "Sweet corn pizza",
+            "category": "Pizza",
+            "imageId": "ea40bd3b487bf78e213b0e8e45d19121",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 14000,
+        },
+        {
+            "id": "126651261",
+            "name": "My special pizza",
+            "category": "Pizza",
+            "imageId": "e0174b5c82562da87008ddb72288c027",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 28000,
+        },
+        {
+            "id": "126651263",
+            "name": "Cheese burger",
+            "category": "Burgers",
+            "imageId": "adf0655c551b19a2743e3507944aadef",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 13000,
+        },
+        {
+            "id": "126651262",
+            "name": "Veg burger",
+            "category": "Burgers",
+            "imageId": "efd9b07771e107a312d908f50c5e6851",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 7000,
+        },
+
+    ]
+
+}
