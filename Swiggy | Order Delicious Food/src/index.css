@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-
+    color: #3E4152;
 }
 
 .header-bar {
@@ -14,6 +14,9 @@
     font-size: 1.2rem;
     padding-right: 20px;
     padding-top: 10px;
+    padding-bottom: 10px;
+   /* border-bottom: #ced0d4 1px solid; */
+    box-shadow: 0px 10px 30px -15px #dadada
 }
 
 .nav-buttons>ul {
@@ -21,10 +24,24 @@
     list-style: none;
     gap: 10px;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-.log-btn{
+
+.nav-buttons>ul>a {
+    text-decoration: none;
+    color: #3E4152;
+    font-weight: bolder;
+}
+.nav-buttons>ul>a>li:hover{
+    color: #FC8019;
+    transition-duration: .5s;
+}
+.btn-area{
+    display: flex;
+    gap: 20px;
+}
+.log-btn {
 
     width: 90px;
     height: 28px;
@@ -38,7 +55,7 @@
 .search-area {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .search-area>input {
@@ -81,11 +98,13 @@
     aspect-ratio: 1/1;
     /* border: #FC8019 1px solid; */
 }
-.body>a{
-    color:black;
-    cursor:pointer;
-    text-decoration:none;
+
+.body>a {
+    color: #3E4152;
+    cursor: pointer;
+    text-decoration: none;
 }
+
 .card>img {
     width: 260px;
     height: 180px;
@@ -123,24 +142,151 @@
     margin-left: 50%;
     translate: -20%
 }
-.log-btn{
-    
-}
-.menu-card{
+
+
+.menu-card {
     display: flex;
     justify-content: space-between;
-    border: #FC8019 1px solid;
-    width:60%;
+    width: 60%;
+    border-bottom: 2px solid rgb(231, 234, 236);
+    gap: 8px;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
-.menu-card-container{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    margin-top:30px;
+
+.menu-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
 }
-.menu-card>img{
-    width: 200px;
-    aspect-ratio:1/1;
+
+.menu-card>img {
+    width: 150px;
+    aspect-ratio: 1/1;
+}
+
+.rest-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 50%;
+    translate: -50%;
+    border-bottom: 2px dashed rgb(231, 234, 236);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.rest-name {
+    font-weight: bolder;
+    font-size: 30px;
+    font-stretch: ultra-expanded;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rest-about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* align-items: center; */
+
+}
+
+.rest-about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+.rest-about-right>img {
+    width: 250px;
+    aspect-ratio: 1/1;
+}
+
+.rest-about-time-fee {
+    display: flex;
+    gap: 15px;
+    width: 60%;
+    margin-left: 50%;
+    translate: -50%;
+    margin-top: 20px;
+
+}
+
+.rest-about-time-fee>h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3E4152;
+    font-weight: bolder;
+}
+
+.offer-cards {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 50%;
+    translate: -50%;
+    border-bottom: 2px dashed rgb(231, 234, 236);
+    padding: 50px;
+
+}
+
+.offer-card1, .offer-card2, .offer-card3, .offer-card4 {
+    width: 260px;
+    height: 80px;
+    background: #e4e2e250;
+    color: #93A6C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 8px;
+
+}
+.shimmer-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    aspect-ratio: 1/1;
+}
+.shimmer-b1{
+    width: 270px;
+    height: 150px;
+    border-radius: 9px;
+    background:rgb(224, 224, 224);
+}
+.shimmer-b2{
+    width: 170px;
+    height: 30px;
+    border-radius: 9px;
+    background:rgb(224, 224, 224);
+}
+.shimmer-b3{
+    width: 100px;
+    height: 20px;
+    border-radius: 9px;
+    background:rgb(224, 224, 224);
+}
+.shimmer-b4{
+    width: 270px;
+    height: 20px;
+    border-radius: 9px;
+    background:rgb(224, 224, 224);
+}
+.shimmer-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
 }
