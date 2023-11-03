@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 import { restaurantData } from "../utils/mockData";
 import axios from 'axios';
+import { Link } from "react-router-dom";
 function Body() {
     const [searchText, setsearchText] = useState("");
     const [originalRestaurantData, setoriginalRestaurantData] = useState([]);
@@ -25,9 +26,9 @@ function Body() {
     }, [])
     const getd = async () => {
         const d1 = await axios.get("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.321684&lng=82.987289&page_type=DESKTOP_WEB_LISTING")
-        setfilteredRestaurantData(d1?.data?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setoriginalRestaurantData(d1?.data?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        console.log(d1);
+        setfilteredRestaurantData(d1?.data?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setoriginalRestaurantData(d1?.data?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log("restdata", d1);
     }
     // function getRestaurantData() {
     //     setfilteredRestaurantData(restaurantData);
@@ -38,8 +39,7 @@ function Body() {
             return items?.info?.name?.toLowerCase()?.includes(searchText?.toLowerCase());
         })
     }
-    // if (filteredRestaurantData.length === 0)
-    //     return <h1 className="filter-error">sorry....no data found </h1>
+    if (!filteredRestaurantData) return <h1>none</h1>
     return (
 
         <div>
@@ -56,7 +56,10 @@ function Body() {
 
             <div className="body">
                 {filteredRestaurantData?.map((items) => {
-                    return <Card {...items?.info} />
+                    return (<Link to={"/restaurant/" + items.info.id} >
+                        <Card {...items?.info} />
+                    </Link>)
+
                 })}
             </div>
 
