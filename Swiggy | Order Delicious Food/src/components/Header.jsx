@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/pngwing.com.png'
 import { useState } from 'react';
 function Header() {
@@ -8,15 +9,16 @@ function Header() {
             <div className="logo">
                 <img src={logo} width={130} />
             </div>
-            <div className='nav-buttons'>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
+
 
             <div className="btn-area" >
+                <div className='nav-buttons'>
+                    <ul>
+                        <Link to={'/'}>  <li>Home</li></Link>
+                        <Link to={'/'}>  <li>About</li></Link>
+                        <Link to={'/'}>  <li>Cart</li></Link>      
+                       </ul>
+                </div>
                 {
                     (isLogged == false) ?
                         (<button className="log-btn" onClick={() => {
