@@ -4,54 +4,42 @@ import { restaurantData } from "../utils/mockData";
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
+import { getFilteredData } from "../utils/helper";
 import offer1 from '../assets/offer1.webp'
 import offer2 from '../assets/offer2.webp'
 import offer3 from '../assets/offer3.webp'
-
+import useOnline from "../utils/useOnline";
 function Body() {
     const [searchText, setsearchText] = useState("");
     const [originalRestaurantData, setoriginalRestaurantData] = useState([]);
     const [filteredRestaurantData, setfilteredRestaurantData] = useState([]);
-
+    const isOnline = useOnline();
     useEffect(() => {
         getRestaurantData();
     }, [])
-    // useEffect(() => {
-    //     getd();
-    // }, [])
-    // const getd = async () => {
-    //     const d1 = await axios.get("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.321684&lng=82.987289&page_type=DESKTOP_WEB_LISTING")
-    //     setfilteredRestaurantData(d1?.data?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    //     setoriginalRestaurantData(d1?.data?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    //     console.log("restdata", d1);
-    // }
+
     function getRestaurantData() {
         setoriginalRestaurantData(restaurantData)
         setfilteredRestaurantData(restaurantData);
         console.log(restaurantData);
     }
-    function getFilteredData() {
-        return originalRestaurantData.filter((items) => {
-            return items?.info?.name?.toLowerCase()?.includes(searchText?.toLowerCase());
-        })
-    }
-    if (!filteredRestaurantData) return null;
-    return filteredRestaurantData.length === 0 ? <Shimmer /> : (
+    if (isOnline === false) return <h1>🔴Check your network please</h1>
 
+    return filteredRestaurantData.length === 0 ? <Shimmer /> : (
         <div>
             <div className="search-area">
                 <input type="text" placeholder="Find taste near you" value={searchText} onChange={(e) => {
                     setsearchText(e.target.value)
                 }} />
                 <button onClick={() => {
-                    setfilteredRestaurantData(getFilteredData(searchText));
+                    setfilteredRestaurantData(getFilteredData(searchText, originalRestaurantData));
                 }}>
                     Find
                 </button>
             </div>
             {/* offers section */}
             <div className="offer-combo">
-                 <h1 className="offer-header">Best offers for you</h1>
+                <h1 className="offer-header">Best offers for you</h1>
                 <div className="offer-section">
                     <img src={offer1} />
                     <img src={offer2} />
