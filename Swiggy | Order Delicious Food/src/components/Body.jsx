@@ -9,6 +9,7 @@ import offer1 from '../assets/offer1.webp'
 import offer2 from '../assets/offer2.webp'
 import offer3 from '../assets/offer3.webp'
 import useOnline from "../utils/useOnline";
+import NetworkError from "./NetworkError";
 function Body() {
     const [searchText, setsearchText] = useState("");
     const [originalRestaurantData, setoriginalRestaurantData] = useState([]);
@@ -23,7 +24,7 @@ function Body() {
         setfilteredRestaurantData(restaurantData);
         console.log(restaurantData);
     }
-    if (isOnline === false) return <h1>🔴Check your network please</h1>
+    if (isOnline === false) return <NetworkError />
 
     return filteredRestaurantData.length === 0 ? <Shimmer /> : (
         <div>
