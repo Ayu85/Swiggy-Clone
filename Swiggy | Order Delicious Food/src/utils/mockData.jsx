@@ -201,17 +201,18 @@ export const restaurantData = [
     },
     {
         "info": {
-            "id": "111853",
-            "name": "Nawabi Zaiqua",
-            "cloudinaryImageId": "u2gamlypxsymem7vzccz",
-            "locality": "Golghar Kachahri",
-            "areaName": "Kachehri",
-            "costForTwo": "₹350 for two",
+            "id": "325996",
+            "name": "The Coriander Blend",
+            "cloudinaryImageId": "sjmsrqafumdjf0lgexys",
+            "locality": "Sant Raghuwar Nagar Colony",
+            "areaName": "Sigra",
+            "costForTwo": "₹250 for two",
             "cuisines": [
-                "Mughlai",
-                "Lucknowi"
+                "Chinese",
+                "Italian"
             ],
             "avgRating": 3.9,
+            "veg": true,
             "feeDetails": {
                 "restaurantId": "111853",
                 "fees": [
@@ -302,23 +303,19 @@ export const restaurantData = [
     },
     {
         "info": {
-            "id": "175428",
-            "name": "Pizza Hub Express",
-            "cloudinaryImageId": "j59bhj7r4bkobzxtjgfu",
-            "locality": "Paharia Chowk",
-            "areaName": "Shastri Nagar",
-            "costForTwo": "₹350 for two",
+            "id": "74537",
+            "name": "Domino's Pizza",
+            "cloudinaryImageId": "lebxw5jctozuqgmkeits",
+            "locality": "IP Mall",
+            "areaName": "Sigra",
+            "costForTwo": "₹400 for two",
             "cuisines": [
                 "Pizzas",
-                "Snacks",
-                "Chinese",
-                "Beverages",
-                "Burgers",
                 "Italian",
                 "Pastas",
-                "Continental"
+                "Desserts"
             ],
-            "avgRating": 3.8,
+            "avgRating": 4.3,
             "veg": true,
             "feeDetails": {
                 "restaurantId": "175428",
@@ -510,21 +507,20 @@ export const restaurantData = [
     },
     {
         "info": {
-            "id": "229192",
-            "name": "Masala Kitchen",
-            "cloudinaryImageId": "f18lpdqyoaftpxhikwon",
-            "locality": "Gilat Bazzar",
-            "areaName": "Nadesar",
-            "costForTwo": "₹300 for two",
+            "id": "90058",
+            "name": "Ganesh Chat Bhandar",
+            "cloudinaryImageId": "yy7uhknid8e2mgqojfcw",
+            "locality": "Rathyatra Mahmoorganj Road",
+            "areaName": "Sigra",
+            "costForTwo": "₹150 for two",
             "cuisines": [
-                "North Indian",
+                "Chaat",
                 "Chinese",
-                "Thalis",
-                "Mughlai",
-                "Desserts",
-                "Continental"
+                "Fast Food",
+                "Desserts"
             ],
-            "avgRating": 3.9,
+            "avgRating": 4,
+            "veg": true,
             "feeDetails": {
                 "restaurantId": "229192",
                 "fees": [
