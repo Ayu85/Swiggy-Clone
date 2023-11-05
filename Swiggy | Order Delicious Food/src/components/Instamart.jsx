@@ -1,7 +1,10 @@
+import logo from '../assets/header-logo.png'
 function Instamart() {
     return (
-        <h2>instamart</h2>
-        
+        <div>
+            <div className='header-logo'><img src={logo} /></div>
+        </div>
+
     )
 }
 export default Instamart;
