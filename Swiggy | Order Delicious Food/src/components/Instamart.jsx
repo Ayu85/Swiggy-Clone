@@ -16,15 +16,42 @@ function Instamart() {
             <div className='header-logo'><img src={logo} /></div>
             <div className='categories-wrapper'>
                 {/* categories part */}
-                <div><img src={laptopLogo} /></div>
-                <div><img src={phoneLogo} /></div>
-                <div><img src={mDress} /></div>
-                <div><img src={wDress} /></div>
-                <div><img src={skinLogo} /></div>
-                <div><img src={perfLogo} /></div>
-                <div><img src={grocLogo} /></div>
-                <div><img src={furntLogo} /></div>
-                <div><img src={decorlogo} /></div>
+                <div className='item-container'>
+                    <img src={laptopLogo} />
+                    <h4>Laptops</h4>
+                </div>
+                <div className='item-container'>
+                    <img src={phoneLogo} />
+                    <h4>Mobiles</h4>
+                </div>
+                <div className='item-container'>
+                    <img src={mDress} />
+                    <h4>Mens wear</h4>
+                </div>
+                <div className='item-container'>
+                    <img src={wDress} />
+                    <h4>Women wear</h4>
+                </div>
+                <div className='item-container'>
+                    <img src={skinLogo} />
+                    <h4>Skin care</h4>
+                </div>
+                <div className='item-container'>
+                    <img src={perfLogo} />
+                    <h4>Perfumes</h4>
+                </div>
+                <div className='item-container'>
+                    <img src={grocLogo} />
+                    <h4>Grocery</h4>
+                </div>
+                <div className='item-container'>
+                    <img src={furntLogo} />
+                    <h4>Furniture</h4>
+                </div>
+                <div className='item-container'>
+                    <img src={decorlogo} />
+                    <h4>Home decor</h4>
+                </div>
 
             </div>
         </div>

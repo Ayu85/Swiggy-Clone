@@ -1,16 +1,39 @@
-.header-logo>img{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header-logo>img {
     width: 100%;
 }
-.header-logo{
+
+.header-logo {
     height: 110px;
     overflow: hidden;
 }
-.categories-wrapper{
+
+.categories-wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    background: #e3e0e257;
+
+
 }
-.categories-wrapper>div>img{
-    width: 100px;
+
+.categories-wrapper>div>img {
+    width: 70px;
     aspect-ratio: 1/1;
     border-radius: 10%;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 15px;
+    gap: 5px;
+    /* border: 1px solid rgb(240, 240, 240); */
+    margin-top: 30px;
 }
