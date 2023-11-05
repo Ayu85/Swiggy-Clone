@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #3E4152;
+    scroll-behavior: smooth;
 }
 
 .header-bar {
@@ -22,7 +23,7 @@
 .nav-buttons>ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     font-size: 1.1rem;
 }
@@ -41,7 +42,7 @@
 
 .btn-area {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .log-btn {
