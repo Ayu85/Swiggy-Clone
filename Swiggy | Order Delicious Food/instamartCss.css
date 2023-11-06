@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
 }
+
 .header-logo>img {
     width: 100%;
 }
@@ -36,4 +38,33 @@ body{
     gap: 5px;
     /* border: 1px solid rgb(240, 240, 240); */
     margin-top: 33px;
+}
+
+.insta-card {
+    width: 200px;
+  height:350px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    border:1px solid black;
+    text-align:center;
+    padding:15px; border: 1px solid rgb(240, 240, 240); 
+    background: #e3e0e257;
+
+}
+
+.insta-card>img {
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius:8px;
+
+}
+.mart-body{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
 }
