@@ -356,3 +356,14 @@
     gap: 15px;
     margin-top: 40px;
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about>img {
+    width: 550px;
+    border-radius: 10px;
+}
