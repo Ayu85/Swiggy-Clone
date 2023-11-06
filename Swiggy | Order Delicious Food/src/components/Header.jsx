@@ -15,7 +15,7 @@ function Header() {
                 <div className='nav-buttons'>
                     <ul>
                         <Link to={'/'}>  <li>Home</li></Link>
-                        <Link to={'/'}>  <li>About</li></Link>
+                        <Link to={'/about'}>  <li>About</li></Link>
                         <Link to={'/'}>  <li>Cart</li></Link>
                         <Link to={'/instamart'}><img src='https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_150/InstamartMicrosite/Instamartlogo' width={120} /></Link>
                     </ul>
