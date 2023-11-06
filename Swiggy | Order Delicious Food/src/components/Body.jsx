@@ -39,9 +39,9 @@ function Body() {
                 </button>
             </div>
             {/* offers section */}
-            <div className="offer-combo">
+            <div className="offer-combo bg-blue-50  ">
                 <h1 className="offer-header">Best offers for you</h1>
-                <div className="offer-section">
+                <div className="offer-section hidden">
                     <img src={offer1} />
                     <img src={offer2} />
                     <img src={offer3} />

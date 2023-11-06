@@ -5,15 +5,15 @@ function Header() {
     const [isLogged, setisLogged] = useState(false);
     const [btn, setBtn] = useState("Login");
     return (
-        <div className="header-bar">
+        <div className="header-bar flex flex-wrap justify-between items-center py-2 pl-2 pr-2">
             <div className="logo">
                 <img src={logo} width={130} />
             </div>
 
 
-            <div className="btn-area" >
-                <div className='nav-buttons'>
-                    <ul>
+            <div className="btn-area flex gap-6" >
+                <div className='nav-buttons '>
+                    <ul className='flex gap-6'>
                         <Link to={'/'}>  <li>Home</li></Link>
                         <Link to={'/about'}>  <li>About</li></Link>
                         <Link to={'/'}>  <li>Cart</li></Link>
@@ -22,14 +22,14 @@ function Header() {
                 </div>
                 {
                     (isLogged == false) ?
-                        (<button className="log-btn" onClick={() => {
+                        (<button className="log-btn bg-orange-500 w-24 text-white rounded-sm" onClick={() => {
                             setisLogged(true)
 
-                        }}>login</button>)
+                        }}>Login</button>)
                         :
-                        (<button className="log-btn" onClick={() => {
+                        (<button className="log-btn  bg-orange-500 w-24 text-white rounded-sm" onClick={() => {
                             setisLogged(false)
-                        }}>logout</button>)
+                        }}>Logout</button>)
                 }
 
             </div>
