@@ -10,8 +10,9 @@ import perfLogo from '../assets/instamartAsset/perfumes.webp'
 import phoneLogo from '../assets/instamartAsset/phone.jpeg'
 import cardOfferLogo from '../assets/instamartAsset/card-offer.webp'
 import InstaCard from './InstaCard'
+import Shimmer from './Shimmer'
 // import useInstamart from '../utils/useInstamart'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 function Instamart() {
     const [martData, setdata] = useState([]);
 
@@ -23,52 +24,52 @@ function Instamart() {
         }
         getMarts();
     }, [])
-    function getFilteredData(type){
-        return martData.filter((items)=>{
-            return items.category==type;
+    function getFilteredData(type) {
+        return martData.filter((items) => {
+            return items.category == type;
         })
     }
     console.log(martData)
-    return (
+    return martData.length === 0 ? <Shimmer /> : (
         <>
             <div>
                 <div className='header-logo'><img src={logo} /></div>
                 <div className='categories-wrapper'>
                     {/* categories part */}
-                    <div className='item-container'onClick={()=>{
-                        const type=laptops;
-                        const d=getFilteredData(type);
+                    <div className='item-container' onClick={() => {
+                        const type = laptops;
+                        const d = getFilteredData(type);
                         setdata(d)
                     }}>
                         <img src={laptopLogo} />
                         <h4>Laptops</h4>
                     </div>
-                    <div className='item-container' onClick={()=>{
-                        const d=getFilteredData("smartphones")
+                    <div className='item-container' onClick={() => {
+                        const d = getFilteredData("smartphones")
                     }}>
                         <img src={phoneLogo} />
                         <h4>Mobiles</h4>
                     </div>
-                    <div className='item-container' onClick={()=>{
-                        const d=getFilteredData( "mens-shirts")
+                    <div className='item-container' onClick={() => {
+                        const d = getFilteredData("mens-shirts")
                     }}>
                         <img src={mDress} />
                         <h4>Mens wear</h4>
                     </div>
-                    <div className='item-container' onClick={()=>{
-                        const d=getFilteredData( "womens-dresses")
+                    <div className='item-container' onClick={() => {
+                        const d = getFilteredData("womens-dresses")
                     }}>
                         <img src={wDress} />
                         <h4>Women wear</h4>
                     </div>
-                    <div className='item-container' onClick={()=>{
-                        const d=getFilteredData( "skincare")
+                    <div className='item-container' onClick={() => {
+                        const d = getFilteredData("skincare")
                     }}>
                         <img src={skinLogo} />
                         <h4>Skin care</h4>
                     </div>
-                    <div className='item-container' onClick={()=>{
-                        const d=getFilteredData( "womens-dresses")
+                    <div className='item-container' onClick={() => {
+                        const d = getFilteredData("womens-dresses")
                     }}>
                         <img src={perfLogo} />
                         <h4>Perfumes</h4>
@@ -89,13 +90,13 @@ function Instamart() {
                 </div>
                 <div><img src={cardOfferLogo} /></div>
             </div>
-           <div className="mart-body">
-          {
-            martData.map((items)=>{
-              return <InstaCard {...items} />
-            })
-          }
-           </div>
+            <div className="mart-body">
+                {
+                    martData.map((items) => {
+                        return <InstaCard {...items} />
+                    })
+                }
+            </div>
         </>
 
 

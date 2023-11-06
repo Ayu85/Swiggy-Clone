@@ -3,8 +3,8 @@ import Body from './components/Body'
 import Header from './components/Header'
 import RestaurantMenu from './components/RestaurantMenu'
 import { BrowserRouter, Routes, Route, createBrowserRouter, Outlet } from "react-router-dom"
-import Instamart from './components/Instamart'
-const mart = lazy(() => import('./components/Instamart'))
+//import Instamart from './components/Instamart'
+const Mart = lazy(() => import('./components/Instamart'))
 const appRouter = createBrowserRouter([
   {
     path: '/',
@@ -23,7 +23,7 @@ const appRouter = createBrowserRouter([
   },
   {
     path: '/instamart',
-    element: <Suspense><Instamart /></Suspense>
+    element: <Suspense><Mart /></Suspense>
   }
 ])
 function App() {
