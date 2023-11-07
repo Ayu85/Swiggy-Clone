@@ -43,7 +43,7 @@ function RestaurantMenu() {
     <div>
       <div className="rest-about flex justify-between  ml-[50%] -translate-x-[50%]  w-[51%] mt-10">
         <div className="rest-about-left">
-          <h2 className="rest-name text-2xl font-bold ">{restData?.name}</h2>
+          <h2 className="rest-name text-2xl font-semibold tracking-wide ">{restData?.name}</h2>
           <p className="text-lg">{restData?.cuisines?.join(",")}</p>
           <p>
             {restData?.locality},{restData?.feeDetails?.message}
